@@ -1,4 +1,4 @@
-module.exports = {
+const germanMessages = {
     ra: {
         action: {
             add_filter: 'Filter hinzufügen',
@@ -22,8 +22,11 @@ module.exports = {
             show: 'Anzeigen',
             sort: 'Sortieren',
             undo: 'Zurücksetzen',
+            unselect: 'Abwählen',
             expand: 'Expandieren',
             close: 'Schließen',
+            open_menu: 'Menü öffnen',
+            close_menu: 'Menü schließen',
         },
         boolean: {
             true: 'Ja',
@@ -63,18 +66,19 @@ module.exports = {
         },
         message: {
             about: 'Über',
-            are_you_sure: 'Bist du sicher?',
+            are_you_sure: 'Sind Sie sicher?',
             bulk_delete_content: 'Möchten Sie "%{name}" wirklich löschen? |||| Möchten Sie diese %{smart_count} Elemente wirklich löschen?',
             bulk_delete_title: 'Lösche %{name} |||| Lösche %{smart_count} %{name} Elemente',
             delete_content: 'Möchten Sie diesen Inhalt wirklich löschen?',
             delete_title: 'Lösche %{name} #%{id}',
             details: 'Details',
-            error: 'Ein Fehler ist aufgetreten und ihre Anfrage konnte nicht abgeschlossen werden.',
-            invalid_form: 'Das Formular ist ungültig. Bitte überprüfen Sie ihre Eingaben.',
+            error: 'Ein Fehler ist aufgetreten und Ihre Anfrage konnte nicht abgeschlossen werden.',
+            invalid_form: 'Das Formular ist ungültig. Bitte überprüfen Sie Ihre Eingaben.',
             loading: 'Die Seite wird geladen.',
             no: 'Nein',
             not_found: 'Die Seite konnte nicht gefunden werden.',
             yes: 'Ja',
+            unsaved_changes: "Einige Ihrer Änderungen wurden nicht gespeichert. Sind Sie sicher, dass Sie sie ignorieren wollen?",
         },
         navigation: {
             no_results: 'Keine Resultate gefunden',
@@ -86,6 +90,12 @@ module.exports = {
             page_rows_per_page: 'Zeilen pro Seite:',
             next: 'Weiter',
             prev: 'Zurück',
+            skip_nav: 'Zum Inhalt springen',
+        },
+        sort: {
+            sort_by: 'Sortieren nach %{field} %{order}',
+            ASC: 'aufsteigend',
+            DESC: 'absteigend',
         },
         auth: {
             auth_check_error: 'Bitte einloggen um fortzufahren',
@@ -100,7 +110,7 @@ module.exports = {
             updated: 'Element wurde aktualisiert |||| %{smart_count} Elemente wurden aktualisiert',
             created: 'Element wurde erstellt',
             deleted: 'Element wurde gelöscht |||| %{smart_count} Elemente wurden gelöscht',
-            bad_item: 'Fehlerhaftes Elemente',
+            bad_item: 'Fehlerhaftes Element',
             item_doesnt_exist: 'Das Element existiert nicht',
             http_error: 'Fehler beim Kommunizieren mit dem Server',
             data_provider_error: 'dataProvider Fehler. Prüfe die Konsole für Details.',
@@ -121,3 +131,5 @@ module.exports = {
         },
     },
 };
+
+export default germanMessages;
